@@ -8,11 +8,11 @@ Here are the guidelines for this exercise:
 
 ### Required Dependencies
 
-| Name      | Download                                                     |
-| --------- | ------------------------------------------------------------ |
-| Wordpress | [https://wordpress.org/download/][pldb]                      |
-| Yarn      | [https://yarnpkg.com/lang/en/docs/install/#mac-stable][pldb] |
-| Composer  | [https://getcomposer.org/download/][plgh]                    |
+| Name      | Download                                             |
+| --------- | ---------------------------------------------------- |
+| Wordpress | https://wordpress.org/download                       |
+| Yarn      | https://yarnpkg.com/lang/en/docs/install/#mac-stable |
+| Composer  | https://getcomposer.org/download                     |
 
 # Setting Up Your Enviornment
 
