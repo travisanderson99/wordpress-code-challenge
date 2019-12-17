@@ -6,7 +6,7 @@ This exercise will have the candidate build an infitine scroll post aggregator w
 
 Here are the guidelines for this exercise:
 
-### Required Dependencies
+## Required Dependencies
 
 | Name      | Download                                             |
 | --------- | ---------------------------------------------------- |
@@ -14,7 +14,7 @@ Here are the guidelines for this exercise:
 | Yarn      | https://yarnpkg.com/lang/en/docs/install/#mac-stable |
 | Composer  | https://getcomposer.org/download                     |
 
-# Setting Up Your Enviornment
+## Setting Up Your Enviornment
 
 -   Create a new instance of Wordpress
 -   Install the Sage Wordpress Starter theme included in the repository into your newly created Wordpress site.
@@ -23,7 +23,7 @@ Here are the guidelines for this exercise:
 -   After composer has finished, run 'yarn' to install all the necessary dependencies.
 -   If needed, utilize the theme documentation installation instructions: https://roots.io/sage/docs/theme-installation/.
 
-# Project Requirements
+## Project Requirements
 
 -   Your task is to create a blog post page
 -   The page needs to have a large hero space which allows the admin to feature a post. The featured area should have the post's featured image as the background, title, date and a CTA to the post.
@@ -34,7 +34,7 @@ Here are the guidelines for this exercise:
 -   Style the aggregator to the best of your ability. Bootstrap classes are available.
 -   Your CSS can be placed in the /resources/assets/styles/layouts/\_posts.scss file.
 
-# Project Submission
+## Project Submission
 
 -   Complete the challenge and return the updated theme files in a zip file to travis@prepnetwork.com.
 -   Within the email, please provide any details related to where your code is, what you struggled with, and any other thoughts you have.
