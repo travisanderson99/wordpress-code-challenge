@@ -25,7 +25,7 @@ Here are the guidelines for this exercise:
 
 ## Project Requirements
 
--   Your task is to create a blog post page
+-   Your task is to create a well designed blog post page with a featured post and ajax loaded posts.
 -   The page needs to have a large hero space which allows the admin to feature a post. The featured area should have the post's featured image as the background, title, date and a CTA to the post.
 -   Below the hero space, there should be a list/grid of posts that are loaded using ajax.
 -   On page load, 10 posts should automatically appear
@@ -34,7 +34,13 @@ Here are the guidelines for this exercise:
 -   Style the aggregator to the best of your ability. Bootstrap classes are available.
 -   Your CSS can be placed in the /resources/assets/styles/layouts/\_posts.scss file.
 
+## Technical Considerations
+
+-   Say we have 1000s of posts, how would you handle making sure the site doesn't get laggy when the user has loaded 1000+ posts onto the page?
+-   If a user clicks into a post and then back out to the main post list page, by default the user will go back to the top of the page with the original 10 posts loaded; How can you make sure the user goes back to the place they were originally at during the time of the click?
+-   Being that this is a blog, SEO is critical for success, make sure crawlers will be able reliably to access the content.
+
 ## Project Submission
 
 -   Complete the challenge and return the updated theme files in a zip file to travis@prepnetwork.com.
--   Within the email, please provide any details related to where your code is, what you struggled with, and any other thoughts you have.
+-   Within the email, please provide any details related to the location of your PHP, JS and CSS code, what you struggled with, and anything else you want us to know.
