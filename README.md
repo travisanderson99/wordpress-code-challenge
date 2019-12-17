@@ -2,32 +2,39 @@
 
 ## Overview
 
-This exercise will have the candidate build an auto-loading post aggregator using ajax and PHP. The purpose of the challenge is to test the candidate's skills in PHP, javascript, and design.
+This exercise will have the candidate build an infitine scroll post aggregator which is triggered by a "Load More" button using ajax and PHP. The purpose of the challenge is to test your skills in PHP, Javascript, and design.
 
 Here are the guidelines for this exercise:
 
--   1) Create a new instance of Wordpress and install the Sage Wordpress Starter theme included in the repository.
--   2) Import the included sage.sql database. If needed, update the siteurl and home url in the wp_options table.
--   3) Once installed, navigate to the sage theme directory and run 'composer install'.
--   4) If you need to install composer, follow the directions in the link here: https://getcomposer.org/doc/00-intro.md.
--   5) After composer has finished, run 'yarn' to install all the necessary dependencies.
--   6) If needed, utilize the theme documentation installation instructions: https://roots.io/sage/docs/theme-installation/.
--   7) In the /app/ajax.php file, add your PHP functionality within the ajax_load_more_posts function.
--   8) In the /resources/assets/scripts/routes/common.js file, add your ajax function that connects to the PHP function.
--   9) You will find an initial query of 10 posts in the /resources/views/index.blade.php file, append the new posts to the existing div.
--   10) On each iteration of the function, 10 new posts should be returned with an initial offset of 10 posts.
--   11) Each post should include the title, featured image, and a link to the post.
--   12) After the functionality is complete, style the aggregator to the best of your ability. Bootstrap classes are available.
--   13) Your CSS can be placed in the /resources/assets/styles/layouts/_posts.scss file.
--   14) Complete the challenge and return the updated theme files.
+### Required Dependencies
 
-## Version
+| Name      | Download                                                     |
+| --------- | ------------------------------------------------------------ |
+| Wordpress | [https://wordpress.org/download/][pldb]                      |
+| Yarn      | [https://yarnpkg.com/lang/en/docs/install/#mac-stable][pldb] |
+| Composer  | [https://getcomposer.org/download/][plgh]                    |
 
-0.1.0
+# Setting Up Your Enviornment
 
-## Get Started
+-   Create a new instance of Wordpress
+-   Install the Sage Wordpress Starter theme included in the repository into your newly created Wordpress site.
+-   Import the included sage.sql database. If needed, update the siteurl and home url in the wp_options table.
+-   Once installed, navigate to the sage theme directory and run 'composer install'.
+-   After composer has finished, run 'yarn' to install all the necessary dependencies.
+-   If needed, utilize the theme documentation installation instructions: https://roots.io/sage/docs/theme-installation/.
 
-```
-git clone https://github.com/travisanderson99/wordpress-code-challenge.git
+# Project Requirements
 
-```
+-   Your task is to create a blog post page
+-   The page needs to have a large hero space which allows the admin to feature a post. The featured area should have the post's featured image as the background, title, date and a CTA to the post.
+-   Below the hero space, there should be a list/grid of posts that are loaded using ajax.
+-   On page load, 10 posts should automatically appear
+-   Below the list of posts should be a "Load More" button that on click, loads the next 10 posts using ajax.
+-   Each post should include the title, featured image, and a link to the post.
+-   Style the aggregator to the best of your ability. Bootstrap classes are available.
+-   Your CSS can be placed in the /resources/assets/styles/layouts/\_posts.scss file.
+
+# Project Submission
+
+-   Complete the challenge and return the updated theme files in a zip file to travis@prepnetwork.com.
+-   Within the email, please provide any details related to where your code is, what you struggled with, and any other thoughts you have.
