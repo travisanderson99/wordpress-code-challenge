@@ -10,18 +10,23 @@
 		'orderby' => 'date',
 		'order' => 'DESC',
   	);
-	$posts = new WP_Query($args); 
+	$posts = new \WP_Query($args); 
 	@endphp
 
 	@if($posts->have_posts())
 		<div class="post-wrapper ajax-load-posts mt-5">
 			@while($posts->have_posts())
 				@php($posts->the_post())
-				<div class="post">
-					<h2 class="title">
-						<a href="{{ the_permalink() }}" title="{{ the_title() }}">{{ the_title() }}</a>
-					</h2>
-				</div>
+				@if($posts->current_post == 0)
+					<div class="featured-post">
+						<!-- Featured post here -->
+					</div>
+				@else
+					@if($posts->current_post == 1)
+						<h2>More News</h2>
+					@endif
+					<!-- Additional posts here -->
+				@endif
 			@endwhile
 		</div>
 		<a id="load-posts" class="btn btn-success text-white">Load More</a>

@@ -2,7 +2,7 @@
 
 ## Overview
 
-This exercise will have the candidate build an infitine scroll post aggregator which is triggered by a "Load More" button using ajax and PHP. The purpose of the challenge is to test your skills in PHP, Javascript, and design.
+This exercise will have the candidate build an infinite scroll post aggregator which is triggered by a "Load More" button using ajax and PHP. The purpose of the challenge is to test your skills in PHP, Javascript, and design.
 
 Here are the guidelines for this exercise:
 
@@ -16,7 +16,7 @@ Here are the guidelines for this exercise:
 
 ## Setting Up Your Enviornment
 
--   Create a new instance of Wordpress
+-   Create a new instance of Wordpress.
 -   Install the Sage Wordpress Starter theme included in the repository into your newly created Wordpress site.
 -   Import the included sage.sql database. If needed, update the siteurl and home url in the wp_options table.
 -   Once installed, navigate to the sage theme directory and run 'composer install'.
@@ -25,14 +25,18 @@ Here are the guidelines for this exercise:
 
 ## Project Requirements
 
--   Your task is to create a well designed blog post page with a featured post and ajax loaded posts.
--   The page needs to have a large hero space which allows the admin to feature a post. The featured area should have the post's featured image as the background, title, date and a CTA to the post.
+-   Your task is to create a well-designed blog post page with one featured post and additional posts loaded via ajax.
+-   In /resources/views/index.blade.php, you will find an initial query of 10 posts and the basic html for one featured post and an aggregator for more posts.
+-   The page needs to have a large hero space to feature the first post loaded by the query. The featured area should have the post's featured image as the background, as well as the title, date and a CTA to the post.
 -   Below the hero space, there should be a list/grid of posts that are loaded using ajax.
--   On page load, 10 posts should automatically appear
--   Below the list of posts should be a "Load More" button that on click, loads the next 10 posts using ajax.
+-   Below the list of posts, you will find a "Load More" button that on click, loads the next 10 posts using ajax.
 -   Each post should include the title, featured image, and a link to the post.
 -   Style the aggregator to the best of your ability. Bootstrap classes are available.
 -   Your CSS can be placed in the /resources/assets/styles/layouts/\_posts.scss file.
+-   Your ajax JS function can be placed in /resources/assets/scripts/routes/common.js.
+-   Assets can be compiled by running 'yarn build' from the theme directory.
+-   The PHP function can be placed in /app/ajax.php. The main.js file has already been localized for ajax in /app/setup.php.
+-   The directions above reflect the most common setup of ajax functionality in Wordpress. If you have an alternative methodology that you would like to implement, you are welcome to stray from the steps above.
 
 ## Technical Considerations
 
