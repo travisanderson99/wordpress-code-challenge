@@ -17,8 +17,8 @@ Here are the guidelines for this exercise:
 ## Setting Up Your Enviornment
 
 -   Create a new instance of Wordpress.
+-   Using the Wordpress import tool, import the included import.xml file, which will populate your database with ~300 posts.
 -   Install the Sage Wordpress Starter theme included in the repository into your newly created Wordpress site.
--   Import the included sage.sql database. If needed, update the siteurl and home url in the wp_options table.
 -   Once installed, navigate to the sage theme directory and run 'composer install'.
 -   After composer has finished, run 'yarn' to install all the necessary dependencies.
 -   If needed, utilize the theme documentation installation instructions: https://roots.io/sage/docs/theme-installation/.
@@ -48,3 +48,6 @@ Here are the guidelines for this exercise:
 
 -   Complete the challenge and return the updated theme files in a zip file to travis@prepnetwork.com.
 -   Within the email, please provide any details related to the location of your PHP, JS and CSS code, what you struggled with, and anything else you want us to know.
+
+## Tips
+-   If yarn fails to compile on the first build and produces an error similar to: '7 errors generated.make: *** [Release/obj.target/binding/src/binding.o]Error 1 gyp ERR! build error' run the following commands: 1) yarn remove node-sass 2) yarn install 3) yarn add node-sass
