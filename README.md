@@ -50,4 +50,5 @@ Here are the guidelines for this exercise:
 -   Within the email, please provide any details related to the location of your PHP, JS and CSS code, what you struggled with, and anything else you want us to know.
 
 ## Tips
--   If yarn fails to compile on the first build and produces an error similar to: '7 errors generated.make: *** [Release/obj.target/binding/src/binding.o]Error 1 gyp ERR! build error' run the following commands: 1) yarn remove node-sass 2) yarn install 3) yarn add node-sass
+-   If yarn fails to compile on the first build and produces an error similar to: '7 errors generated.make: *** [Release/obj.target/binding/src/binding.o]Error 1 gyp ERR! build error' run the following commands: 
+1) yarn remove node-sass 2) yarn install 3) yarn add node-sass
