@@ -51,4 +51,6 @@ Here are the guidelines for this exercise:
 
 ## Tips
 -   If yarn fails to compile on the first build and produces an error similar to: '7 errors generated.make: *** [Release/obj.target/binding/src/binding.o]Error 1 gyp ERR! build error' run the following commands: 
-1) yarn remove node-sass 2) yarn install 3) yarn add node-sass
+1) yarn remove node-sass 
+2) yarn install 
+3) yarn add node-sass
